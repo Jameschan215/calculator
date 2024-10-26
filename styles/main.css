@@ -33,8 +33,8 @@ body {
 
 .container {
 	margin: 0 auto;
-	margin-top: 68px;
-	width: 310px;
+	margin-top: 96px;
+	width: 380px;
 
 	padding: 8px;
 	padding-bottom: 12px;
@@ -61,7 +61,7 @@ body {
 
 .display {
 	width: 100%;
-	height: 108px;
+	height: 128px;
 
 	border-radius: 6px;
 	background-color: var(--btnBg);
@@ -86,7 +86,7 @@ body {
 	font-family: 'Rajdhani', sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 4rem;
+	font-size: 4.8rem;
 	overflow: hidden;
 }
 
@@ -102,7 +102,7 @@ body {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 8px;
-	grid-auto-rows: minmax(56px, auto);
+	grid-auto-rows: minmax(72px, auto);
 }
 
 button {
@@ -110,7 +110,7 @@ button {
 	font-weight: 400;
 	font-style: normal;
 
-	font-size: 3rem;
+	font-size: 3.6rem;
 	cursor: pointer;
 
 	border-radius: 8px;
@@ -155,19 +155,19 @@ button.activated {
 }
 
 .plus {
-	grid-row: 1;
+	grid-row: 4;
 }
 
 .minus {
-	grid-row: 2;
-}
-
-.times {
 	grid-row: 3;
 }
 
+.times {
+	grid-row: 2;
+}
+
 .divided-by {
-	grid-row: 4;
+	grid-row: 1;
 }
 
 .equals {
@@ -183,7 +183,7 @@ button.activated {
 .clear,
 .delete {
 	background-color: #54b500;
-	font-size: 2.4rem;
+	font-size: 2.8rem;
 	font-weight: 500;
 }
 
@@ -208,4 +208,9 @@ button.activated {
 .footer p a {
 	font-weight: 500;
 	color: inherit;
+}
+
+.sign {
+	font-family: monospace;
+	font-size: 2.4rem;
 }
