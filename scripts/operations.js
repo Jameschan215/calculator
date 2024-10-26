@@ -15,6 +15,10 @@ function divide(a, b) {
 }
 
 export function binaryOperate(operand, firstNum, secondNum) {
+	if (typeof firstNum !== 'number' || typeof secondNum !== 'number') {
+		return undefined;
+	}
+
 	switch (operand) {
 		case '+':
 			return add(firstNum, secondNum);
@@ -24,12 +28,12 @@ export function binaryOperate(operand, firstNum, secondNum) {
 			return multiply(firstNum, secondNum);
 		case '/':
 			return divide(firstNum, secondNum);
-
 		default:
 			return undefined;
 	}
 }
 
 export function unaryOperate(num) {
+	if (typeof num !== 'number') return undefined;
 	return -1 * num;
 }
